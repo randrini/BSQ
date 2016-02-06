@@ -15,7 +15,7 @@
 int		ft_error(void)
 {
 	ft_putstr("map error\n");
-	exit(1);
+	exit(0);
 }
 
 int		ft_strlen_mod(char *str)
@@ -77,14 +77,16 @@ void	ft_check_char(char *buf)
 int		ft_check_full_o(char *str)
 {
 	int	i;
+	t_param *tmp_param;
 
 	i = 0;
+	tmp_param = ft_get_parameters(str);
 	while (str[i] != '\n')
 		i++;
 	i++;
 	while (str[i] != '\0')
 	{
-		if (str[i] == 'o' || str[i] == '\n')
+		if (str[i] == tmp_param->obst || str[i] == '\n')
 			i++;
 		else
 			return (0);

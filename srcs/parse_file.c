@@ -79,18 +79,10 @@ void	ft_check_file(char *buf)
 		if (str[i] == tmp_param->full)
 			i++;
 		else
-		{
-			printf(" ========== FAAAAAAAAAAAK =========== ");
 			ft_error();
-
-		}
 	}
 	else
-	{
-		printf(" FUUUUCK \n");
 		ft_error();
-
-	}
 }
 
 char	*parse_file(char *file)
@@ -105,9 +97,7 @@ char	*parse_file(char *file)
 	ret = read(fd, buf, BUFFER_SIZE);
 	buf[ret] = '\0';
 	close(fd);
-	printf("======== MAKING BUFF  ======");
 	ft_check_file(buf);
-	printf("======== CHECK FILE ======");
 	ft_check_char(buf);
 	ft_check_full_o(buf);
 	ft_check_grid(buf);
