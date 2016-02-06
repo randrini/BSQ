@@ -15,7 +15,7 @@
 int		ft_error(void)
 {
 	ft_putstr("map error\n");
-	exit(0);
+	exit(1);
 }
 
 int		ft_strlen_mod(char *str)
