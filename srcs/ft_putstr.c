@@ -6,7 +6,7 @@
 /*   By: randrini <randrini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/31 19:07:52 by randrini          #+#    #+#             */
-/*   Updated: 2016/01/31 19:09:38 by randrini         ###   ########.fr       */
+/*   Updated: 2016/02/06 16:14:11 by randrini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putchar(char c)
 void	ft_putstr(char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (str[i])
 	{
